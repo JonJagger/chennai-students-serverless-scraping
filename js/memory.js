@@ -36,7 +36,6 @@ $(document).ready(function() {
 
   $.ajax({
     url: `${ipAddress()}/images/index?shuffled=true`,
-    crossDomain:true,
     success: function(html){
       $(html).find('li').each(function() {
         let filename = $(this).text();
