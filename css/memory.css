@@ -11,16 +11,16 @@
   }
 
   #shuffle {
-    font-weight: 800;
-    border-radius: 10px;
-    margin-top: 10px;
-    font-size: 35px;
-    background-color: white;
+      font-weight: 800;
+      border-radius: 10px;
+      margin-bottom: 10px;
+      font-size: 35px;
+      background-color: white;
   }
 
   students {
       display: block;
-      width: 800px;
+      width: 850px;
   }
 
   img.student {
