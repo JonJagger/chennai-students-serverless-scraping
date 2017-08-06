@@ -1,11 +1,11 @@
 $(document).ready(function() {
 
-  let ipAddress = function() {
+  const ipAddress = function() {
     // https://github.com/JonJagger/chennai-students-server
     return 'http://104.197.157.118';
   };
 
-  let image = function(filename) {
+  const image = function(filename) {
     return $('<img>', {
       'class':'student',
       'title':filename.substring(0,filename.indexOf('.')),
@@ -13,7 +13,7 @@ $(document).ready(function() {
      });
   };
 
-  let tipped = function(node) {
+  const tipped = function(node) {
     return node.tooltip({
       position: {
         my: 'center bottom-20',
@@ -44,7 +44,7 @@ $(document).ready(function() {
       });
     },
     error:function(xhr, textStatus, errorThrown) {
-      alert('textStatus:'+textStatus);
+      alert('error:textStatus:'+textStatus);
     }
   });
 
